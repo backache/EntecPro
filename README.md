@@ -51,31 +51,30 @@ Triggers a blackout and then exits the script
 ## Cues
 
 ### save
+Save current universe as a cue
+
 `cue save <name>`        
-# Save current universe as a cue
 
 ### list
 `cue list`               
 # List stored cues
 
 ### load
-
-`cue load <name>`
 Instantly recall a cue
+`cue load <name>`
 
 ### fade
-`cue fade <name> <ms>`
 Fade current state to cue
+`cue fade <name> <ms>`
 
 ### delete
-`cue delete <name>`
 Remove cue
+
+`cue delete <name>`
 
 # Files
 
-Cues are stored in a file in the same directory as the script :
-
-cues.json
+Cues are stored in a file in the same directory as the script as a readable text file called "cues.json"
 
 
  
