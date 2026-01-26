@@ -3,33 +3,79 @@ Simple commandline DMX Console written in Powershell
 
 (For the Entex USB Pro Mk2)
 
+When you start it you are give a "dmx> " prompt in which to write your commands
+
 # Commands
-set <channel> <value>
-fade <channel> <from> <to> <ms>
-show <channel>
-blackout
-exit
 
-cue save <name>        # Save current universe as a cue
-cue list               # List stored cues
-cue load <name>        # Instantly recall a cue
-cue fade <name> <ms>   # Fade current state to cue
-cue delete <name>      # Remove cue
+## Direct
 
+### Set
 
-Cues are stored in:
+`set <channel> <value>` 
+
+Immediatly change a value, for example to set Channel 1 to 255
+
+_set 1 255_  
+
+### fade
+
+`fade <channel> <from> <to> <ms>`  
+
+Example to fade Channel 1 to the value of 255 to value 0 0 over 2000 milliseconds (two seconds)
+
+_fade 1 255 0 2000_
+
+### Show
+show <channel> 
+
+example to see what value to channel is set to
+
+_show 5_
+
+It will then respond with 
+
+_Channel 5 = 128_
+
+### Blackout
+
+blackout 
+
+sets everying to zero
+
+### exit
+
+exit  
+
+Triggers a blackout and then exits the script
+
+## Cues
+
+### save
+`cue save <name>`        
+# Save current universe as a cue
+
+### list
+`cue list`               
+# List stored cues
+
+### load
+
+`cue load <name>`
+Instantly recall a cue
+
+### fade
+`cue fade <name> <ms>`
+Fade current state to cue
+
+### delete
+`cue delete <name>`
+Remove cue
+
+# Files
+
+Cues are stored in a file in the same directory as the script :
 
 cues.json
 
 
-in the script directory.
-
-#example
-
-dmx> set 1 255
-dmx> fade 1 255 0 2000
-dmx> set 5 128
-dmx> show 5
-Channel 5 = 128
-dmx> blackout
-dmx> exit
+ 
