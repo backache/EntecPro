@@ -26,7 +26,7 @@ Example to fade Channel 1 to the value of 255 to value 0 0 over 2000 millisecond
 _fade 1 255 0 2000_
 
 ### Show
-show <channel> 
+`show <channel>` 
 
 example to see what value to channel is set to
 
@@ -38,13 +38,13 @@ _Channel 5 = 128_
 
 ### Blackout
 
-blackout 
+`blackout` 
 
 sets everying to zero
 
 ### exit
 
-exit  
+`exit`  
 
 Triggers a blackout and then exits the script
 
