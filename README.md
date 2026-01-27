@@ -5,6 +5,8 @@ Simple commandline DMX Console written in Powershell
 
 When you start it you are give a "dmx> " prompt in which to write your commands
 
+To configure it look what COM port the entec has been assigned in device manager and alter the code approriatly
+
 # Commands
 
 ## Direct
